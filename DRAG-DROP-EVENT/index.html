@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAG-DROP-EVENT</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: steelblue;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    section {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .empty {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border: 2px solid black;
+        margin: 10px;
+    }
+    .fill {
+        background-image: url(../DRAG-DROP-EVENT/passport.JPG);
+        background-size: 145px 145px; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 145px;
+        height: 145px;
+        cursor: pointer;
+    }
+    .hold {
+        border: 5px solid #ccc;
+    }
+    .hovered {
+        background-color: black;
+        border: 2px dashed white;
+    }
+</style>
+<body>
+    <section>
+        <div class="empty">
+            <div class="fill" draggable="true"></div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
